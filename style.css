@@ -1,0 +1,16 @@
+.copy_right_footer {
+    position: fixed;
+    color: yellow;
+    bottom: 0;
+    width: 100%;
+    background-color:blue;
+    line-height: 3;
+    text-align: center;
+    font: bold Arial;
+ }
+
+ canvas {
+     border: 2px solid blue;
+     box-shadow: 2px 2px 2px black;
+     width: 50px;
+ }
