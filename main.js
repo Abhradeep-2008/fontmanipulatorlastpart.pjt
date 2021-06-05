@@ -28,13 +28,15 @@ function setup() {
       rightWristX = results[0].pose.rightWrist.x;
       fontsize = floor(leftWristX - rightWristX);
 
+      document.getElementById("text_size").innerHTML = "Font Size is: "+fontsize;
+
     }
 }
 
 
 function draw() {
     background('#969A97');
-    textSize(20);
+    textSize(fontsize);
     fill("yellow");
-    text("Hi,There! Thx for using the app :D", leftWristX, rightWristX);
+    text("Hi,There! Thx for using the app :D", rightWristX, leftWristX);
 }
